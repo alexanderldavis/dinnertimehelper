@@ -20,7 +20,7 @@ CREATE TABLE public."Membership" (
 	CONSTRAINT "Membership_uid_fkey" FOREIGN KEY (uid)
 		REFERENCES public."User" (uid) MATCH SIMPLE
 		ON UPDATE NO ACTION ON DELETE NO ACTION,
-	CONSTRAINT "Membership_gid_fkey" FOREIGN KEY (fid)
+	CONSTRAINT "Membership_gid_fkey" FOREIGN KEY (gid)
 		REFERENCES public."Group" (gid) MATCH SIMPLE
 		ON UPDATE NO ACTION ON DELETE NO ACTION
 )
